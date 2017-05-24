@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Geocode Accuracy</value>
+        </caseValues>
+        <name>billing_accuracy_geocode_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Address</value>
+        </caseValues>
+        <name>billing_address_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>City</value>
+        </caseValues>
+        <name>billing_city_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Country</value>
+        </caseValues>
+        <name>billing_country_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Country Code</value>
+        </caseValues>
+        <name>billing_country_code_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Latitude</value>
+        </caseValues>
+        <name>billing_latitude_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Longitude</value>
+        </caseValues>
+        <name>billing_longitude_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>State/Province</value>
+        </caseValues>
+        <name>billing_state_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>State/Province Code</value>
+        </caseValues>
+        <name>billing_state_code_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Street</value>
+        </caseValues>
+        <name>billing_street_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Zip/Postal Code</value>
+        </caseValues>
+        <name>billing_zip_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>System Parent</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>System Parents</value>
+        </caseValues>
+        <name>parent_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Current Distributor --></label>
+        <name>Current_Distributor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geolocation --></label>
+        <name>Geolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- AVP --></label>
+        <name>OM_AVP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accept Backorders? --></label>
+        <name>OM_Accept_Backorders__c</name>
+        <picklistValues>
+            <masterLabel>Allow Back Orders</masterLabel>
+            <translation><!-- Allow Back Orders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Allow Backorders</masterLabel>
+            <translation><!-- Do Not Allow Backorders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship Complete</masterLabel>
+            <translation><!-- Ship Complete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Department --></label>
+        <name>OM_Account_Department__c</name>
+    </fields>
+    <fields>
+        <help><!-- Low Risk:  Below 10% Chance of Loss
+Mild Risk:  10% - 25% Chance of Loss
+Moderate Risk:  26% -50% Chance of Loss
+Significant Risk:  Over 50% Chance of Loss --></help>
+        <label><!-- Account Risk Status --></label>
+        <name>OM_Account_Risk_Status__c</name>
+        <picklistValues>
+            <masterLabel>Low Risk (Below 10%)</masterLabel>
+            <translation><!-- Low Risk (Below 10%) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mild Risk (10% - 25%)</masterLabel>
+            <translation><!-- Mild Risk (10% - 25%) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderate Risk (26% - 50%)</masterLabel>
+            <translation><!-- Moderate Risk (26% - 50%) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Significant Risk (Over 50%)</masterLabel>
+            <translation><!-- Significant Risk (Over 50%) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Write the reason for the account status change --></help>
+        <label><!-- Account Status Reason --></label>
+        <name>OM_Account_Status_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Expiration Date --></label>
+        <name>OM_Agreement_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allocate Inventory --></label>
+        <name>OM_Allocate_Inventory__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Allow Future Orders --></label>
+        <name>OM_Allow_Future_Orders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Repacks --></label>
+        <name>OM_Allow_Repacks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Substitutions --></label>
+        <name>OM_Allow_Substitutions__c</name>
+        <picklistValues>
+            <masterLabel>B Bypass Subrule2 and Subrule3</masterLabel>
+            <translation><!-- B Bypass Subrule2 and Subrule3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N NO, ACK Copy is not Printed</masterLabel>
+            <translation><!-- N NO, ACK Copy is not Printed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N No</masterLabel>
+            <translation><!-- N No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P Pend Order for Review</masterLabel>
+            <translation><!-- P Pend Order for Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y YES</masterLabel>
+            <translation><!-- Y YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approx Dollar Volume --></label>
+        <name>OM_Approx_Dollar_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attention --></label>
+        <name>OM_Attention__c</name>
+    </fields>
+    <fields>
+        <label><!-- BOP License Effective Date --></label>
+        <name>OM_BOP_License_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- BOP License Expiration Date --></label>
+        <name>OM_BOP_License_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- BOP License Number --></label>
+        <name>OM_BOP_License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- BOP License Type --></label>
+        <name>OM_BOP_License_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- BOP License Verified --></label>
+        <name>OM_BOP_License_Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Account --></label>
+        <name>OM_Billing_Account__c</name>
+        <relationshipLabel><!-- Facilities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Billing P.O. Box --></label>
+        <name>OM_Billing_PO_Box__c</name>
+    </fields>
+    <fields>
+        <label><!-- Carrier Type --></label>
+        <name>OM_Carrier_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Code --></label>
+        <name>OM_Case_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class of Trade --></label>
+        <name>OM_Class_of_Trade__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>OM_County__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to hold an account for credit reasons. --></help>
+        <label><!-- Credit Hold --></label>
+        <name>OM_Credit_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit --></label>
+        <name>OM_Credit_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Risk Rating --></label>
+        <name>OM_Credit_Risk_Rating__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A+</masterLabel>
+            <translation><!-- A+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A-</masterLabel>
+            <translation><!-- A- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B+</masterLabel>
+            <translation><!-- B+ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B-</masterLabel>
+            <translation><!-- B- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BK</masterLabel>
+            <translation><!-- BK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COL</masterLabel>
+            <translation><!-- COL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>P</masterLabel>
+            <translation><!-- P --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer GPO ID Number --></label>
+        <name>OM_Customer_GPO_ID_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer ID --></label>
+        <name>OM_Customer_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- DC GM Approval --></label>
+        <name>OM_DC_GM_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- DC Legacy Number --></label>
+        <name>OM_DC_Legacy_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- DCs Affected --></label>
+        <name>OM_DCs_Affected__c</name>
+    </fields>
+    <fields>
+        <label><!-- DEA Number --></label>
+        <name>OM_DEA_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Status Posting Date --></label>
+        <name>OM_Dealer_Status_Posting_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deliver to Dock? --></label>
+        <name>OM_Deliver_to_Dock__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delivery Comment --></label>
+        <name>OM_Delivery_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department Name --></label>
+        <name>OM_Department_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- EDI Invoices --></label>
+        <name>OM_EDI_Invoices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility ID --></label>
+        <name>OM_Facility_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Federal Tax ID --></label>
+        <name>OM_Federal_Tax_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag for Finance Charge --></label>
+        <name>OM_Flag_for_Finance_Charge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Freight Billing --></label>
+        <name>OM_Freight_Billing__c</name>
+        <picklistValues>
+            <masterLabel>Billable</masterLabel>
+            <translation><!-- Billable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collect</masterLabel>
+            <translation><!-- Collect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepaid</masterLabel>
+            <translation><!-- Prepaid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GPO Confirmed --></label>
+        <name>OM_GPO_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- GPO Ranking --></label>
+        <name>OM_GPO_Ranking__c</name>
+    </fields>
+    <fields>
+        <label><!-- HIN Number --></label>
+        <name>OM_HIN_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inside Sales --></label>
+        <name>OM_Inside_Sales__c</name>
+        <relationshipLabel><!-- Inside Sales Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is shipto location owned entity of TA? --></label>
+        <name>OM_Is_shipto_location_an_owned_entity_TA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- JIT --></label>
+        <name>OM_JIT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legend License Number --></label>
+        <name>OM_Legend_License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location ID --></label>
+        <name>OM_Location_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM External ID --></label>
+        <name>OM_MDM_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM ID --></label>
+        <name>OM_MDM_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monitor Class --></label>
+        <name>OM_Monitor_Class__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AB</masterLabel>
+            <translation><!-- AB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ABC</masterLabel>
+            <translation><!-- ABC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ABCD</masterLabel>
+            <translation><!-- ABCD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Class</masterLabel>
+            <translation><!-- No Class --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monitor Stock --></label>
+        <name>OM_Monitor_Stock__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Monitor Velocity --></label>
+        <name>OM_Monitor_Velocity__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter accepted name if it differs from the formal/legal name of the account. --></help>
+        <label><!-- Nickname --></label>
+        <name>OM_Nickname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Address Info --></label>
+        <name>OM_Non_Address_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Beds --></label>
+        <name>OM_Number_of_Beds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Open Cases --></label>
+        <name>OM_Number_of_Open_Cases__c</name>
+    </fields>
+    <fields>
+        <label><!-- OMAR ID --></label>
+        <name>OM_OMAR_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- OMNI II Key --></label>
+        <name>OM_OMNI_II_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Omni ID --></label>
+        <name>OM_Omni_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ordering Unit --></label>
+        <name>OM_Ordering_Unit__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Outside Sales Rep --></label>
+        <name>OM_Outside_Sales_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outside Sales --></label>
+        <name>OM_Outside_Sales__c</name>
+        <relationshipLabel><!-- Outside Sales Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Override Default DC UOM --></label>
+        <name>OM_Override_Default_DC_UOM__c</name>
+        <picklistValues>
+            <masterLabel>Exception</masterLabel>
+            <translation><!-- Exception --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selected</masterLabel>
+            <translation><!-- Selected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parent/IDN Account --></label>
+        <name>OM_Parent_IDN_Account__c</name>
+        <relationshipLabel><!-- Transactional Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Picking Label --></label>
+        <name>OM_Picking_Label__c</name>
+        <picklistValues>
+            <masterLabel>Code B</masterLabel>
+            <translation><!-- Code B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Code Y</masterLabel>
+            <translation><!-- Code Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Price Rounding --></label>
+        <name>OM_Price_Rounding__c</name>
+        <picklistValues>
+            <masterLabel>Extend Price to 2 digits after the decimal</masterLabel>
+            <translation><!-- Extend Price to 2 digits after the decimal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extend Price to 4 digits after the decimal</masterLabel>
+            <translation><!-- Extend Price to 4 digits after the decimal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Round Price (2 digit conventional rounding)</masterLabel>
+            <translation><!-- Round Price (2 digit conventional rounding) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary DC --></label>
+        <name>OM_Primary_DC__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Print Invoices --></label>
+        <name>OM_Print_Invoices__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchase Levels --></label>
+        <name>OM_Purchase_Levels__c</name>
+    </fields>
+    <fields>
+        <label><!-- RVP --></label>
+        <name>OM_RVP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>OM_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Type --></label>
+        <name>OM_Reporting_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Require Pharmacy License --></label>
+        <name>OM_Require_Pharmacy_License__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Risk Indicator --></label>
+        <name>OM_Risk_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary DC --></label>
+        <name>OM_Secondary_DC__c</name>
+        <relationshipLabel><!-- Accounts (Secondary DC) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Shipping P.O. Box --></label>
+        <name>OM_Shipping_P_O_Box__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solutions --></label>
+        <name>OM_Solutions__c</name>
+        <relationshipLabel><!-- Solutions Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>OM_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Hold</masterLabel>
+            <translation><!-- Credit Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Propsect</masterLabel>
+            <translation><!-- Propsect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stockpiling --></label>
+        <name>OM_Stockpiling__c</name>
+        <picklistValues>
+            <masterLabel>Monitor Stockpile by CIM Usage</masterLabel>
+            <translation><!-- Monitor Stockpile by CIM Usage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitor Stockpile by Previous or Average</masterLabel>
+            <translation><!-- Monitor Stockpile by Previous or Average --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No stockpile Monitoring (default value)</masterLabel>
+            <translation><!-- No stockpile Monitoring (default value) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subgroup ID --></label>
+        <name>OM_Subgroup_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subgroup Name --></label>
+        <name>OM_Subgroup_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suite/Dept Number --></label>
+        <name>OM_Suite_Dept_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sum of Open Opportunities --></label>
+        <name>OM_Sum_of_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Surgitrack --></label>
+        <name>OM_Surgitrack__c</name>
+        <relationshipLabel><!-- Surgitrack Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tax Area IDs Verified --></label>
+        <name>OM_Tax_Area_IDs_Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Exempt Expiration Date --></label>
+        <name>OM_Tax_Exempt_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Exempt ID --></label>
+        <name>OM_Tax_Exempt_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax Exempt Status --></label>
+        <name>OM_Tax_Exempt_Status__c</name>
+        <picklistValues>
+            <masterLabel>Direct Pay</masterLabel>
+            <translation><!-- Direct Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt</masterLabel>
+            <translation><!-- Exempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Federal Government</masterLabel>
+            <translation><!-- Federal Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indian Reservation</masterLabel>
+            <translation><!-- Indian Reservation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local/State Government</masterLabel>
+            <translation><!-- Local/State Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Exempt</masterLabel>
+            <translation><!-- Non-Exempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resale</masterLabel>
+            <translation><!-- Resale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxable - Override</masterLabel>
+            <translation><!-- Taxable - Override --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxable - Regular</masterLabel>
+            <translation><!-- Taxable - Regular --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tax Exemption Certification Verified --></label>
+        <name>OM_Tax_Exemption_Certification_Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax ID --></label>
+        <name>OM_Tax_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tier 1 : $200M or Greater; 
+Tier 2 : $100M - $199M; 
+Crown Jewels : $25M - $99M;
+Gems : $10M - $24M --></help>
+        <label><!-- Tier --></label>
+        <name>OM_Tier__c</name>
+        <picklistValues>
+            <masterLabel>Crown Jewel</masterLabel>
+            <translation><!-- Crown Jewel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gem</masterLabel>
+            <translation><!-- Gem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation><!-- Tier 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total number of Open Opportunities --></label>
+        <name>OM_Total_number_of_Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transactional Account --></label>
+        <name>OM_Transactional_Account__c</name>
+        <relationshipLabel><!-- Child Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- University/Academic Medical Center --></label>
+        <name>OM_University_Academic_Medical_Center__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open Cases --></label>
+        <name>Open_Cases__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Key Metrics --></label>
+            <section>Key Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Onboarding Information --></label>
+            <section>Onboarding Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Reps --></label>
+            <section>Sales Reps</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Tax &amp; Licensing Information --></label>
+            <section>Tax &amp; Licensing Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Bill To Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- License Information --></label>
+            <section>License Information</section>
+        </sections>
+        <sections>
+            <label><!-- OM System Information --></label>
+            <section>OM System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Purchasing Information --></label>
+            <section>Purchasing Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Reps --></label>
+            <section>Sales Reps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CEC Account Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- BOP License Information --></label>
+            <section>BOP License Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- OM System Information --></label>
+            <section>OM System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Reps --></label>
+            <section>Sales Reps</section>
+        </sections>
+        <sections>
+            <label><!-- Tax Information --></label>
+            <section>Tax Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>CEC Ship/Del Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- BOP License Information --></label>
+            <section>BOP License Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Delivery Information --></label>
+            <section>Delivery Information</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- OM System Information --></label>
+            <section>OM System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Reps --></label>
+            <section>Sales Reps</section>
+        </sections>
+        <sections>
+            <label><!-- Tax Information --></label>
+            <section>Tax Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Deliver To Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Key Metrics --></label>
+            <section>Key Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- OM System Information --></label>
+            <section>OM System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Reps --></label>
+            <section>Sales Reps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Manufacturer Layout</layout>
+        <sections>
+            <label><!-- Sales Reps --></label>
+            <section>Sales Reps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Master Account Layout</layout>
+        <sections>
+            <label><!-- OM System Information --></label>
+            <section>OM System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Order Preferences --></label>
+            <section>Order Preferences</section>
+        </sections>
+        <sections>
+            <label><!-- Tax Information --></label>
+            <section>Tax Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Parent Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Key Metrics --></label>
+            <section>Key Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- OM System Information --></label>
+            <section>OM System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Reps --></label>
+            <section>Sales Reps</section>
+        </sections>
+        <sections>
+            <label><!-- Tax &amp; Licensing Information --></label>
+            <section>Tax &amp; Licensing Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Prospect Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ship To Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Key Metrics --></label>
+            <section>Key Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- OM System Information --></label>
+            <section>OM System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Reps --></label>
+            <section>Sales Reps</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Supplier</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Key Metrics --></label>
+            <section>Key Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Onboarding Information --></label>
+            <section>Onboarding Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Reps --></label>
+            <section>Sales Reps</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Tax &amp; Licensing Information --></label>
+            <section>Tax &amp; Licensing Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Log a Call --></label>
+        <name>OM_Log_a_Call</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Event --></label>
+        <name>OM_New_Event</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Task --></label>
+        <name>OM_New_Task</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Send Email --></label>
+        <name>OM_Send_Email</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Account Information --></label>
+        <name>Update_Account_Information</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Account --></label>
+        <name>OM_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Bill To --></label>
+        <name>OM_Bill_To</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Deliver To --></label>
+        <name>OM_Deliver_To</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Manufacturer Account --></label>
+        <name>OM_Manufacturer_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Master Account --></label>
+        <name>OM_Master_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Parent Account --></label>
+        <name>OM_Parent_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospect --></label>
+        <name>OM_Prospect</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ship To --></label>
+        <name>OM_Ship_To</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Supplier --></label>
+        <name>OM_Supplier</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please mention the account status reason change in the field &quot;Account Status Reason&quot; --></errorMessage>
+        <name>Account_Status_Change_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must choose an active DC for this prospect account --></errorMessage>
+        <name>Active_DC_on_Prospect</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- OM_Medichoice_Revenue_Report --></label>
+        <name>OM_Medichoice_Revenue_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Pardot_Emails --></label>
+        <name>pi__Send_Pardot_Emails</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Single_Pardot_Email --></label>
+        <name>pi__Send_Single_Pardot_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

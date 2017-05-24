@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>CSR Test User</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>&lt;input value=&quot; Login &quot; class=&quot;btn&quot; name=&quot;login&quot; title=&quot;Login&quot; type=&quot;button&quot; onclick=&quot;navigateToUrl(&apos;/servlet/servlet.su?oid=00D4B000000D1y1&amp;amp;suorgadminid=0054B000000sQkY&amp;amp;retURL=%2F0054B000000sQkY%3Fnoredirect%3D1%26isUserEntityOverride%3D1&amp;amp;targetURL=%2F500%2Fo&apos;,null,&apos;login&apos;);&quot;&gt;</url>
+</CustomPageWebLink>

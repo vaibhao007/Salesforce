@@ -1,0 +1,131 @@
+<apex:page id="ExportProfileWorkbookPage" controller="ExportProfileCon" sidebar="false" standardStylesheets="false" docType="html-5.0"  showHeader="true" readOnly="true" tabStyle="Account">
+
+   <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/>
+    <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"/>
+
+    <link href="{!URLFOR($Resource.bootStrap, 'bootstrap/css/bootstrap.min.css')}" rel="stylesheet" media="screen"/>
+         <apex:includeScript value="{!URLFOR($Resource.bootstrap, 'js/bootstrap.min.js')}"/>
+    
+    
+   <apex:actionstatus id="counterStatus">
+    <apex:facet name="start">
+        <div class="waitingSearchDiv" id="el_loading" style="background-color: #fbfbfb; height:100%;opacity:0.65;width:100%;">
+            <div class="waitingHolder" style="top: 100px; width: 91px;">
+            <img class="waitingImage" src="/img/loading.gif"  title="Please Wait..." />
+            <span class="waitingDescription">Loading...</span>
+            </div>
+        </div>
+    </apex:facet>
+</apex:actionstatus>
+    <apex:form id="ExportProfileWorkbookForm" >
+    <apex:pageMessages />
+    
+        <apex:pageBlock id="ExportProfileWorkbookPG" title="Export Profile Workbook" >
+       
+       <!-- <apex:pageBlockButtons location="top" >
+         Email Address: <apex:inputText value="{!EnteredEmail}" required="true" id="email"/>&nbsp;&nbsp;&nbsp;
+            <apex:commandbutton status="counterStatus" value="Send Profile workbook" action="{!exportAll}"  />
+        </apex:pageBlockButtons>-->
+        
+            <apex:pageBlockSection title="Profile">
+               
+               <apex:panelGrid columns="2" columnClasses="labelCol,dataCol">
+                            <apex:outputLabel value="Select Profile" for="profiles" />
+                           
+                <apex:outputPanel >
+                    
+                       <apex:selectList id="profiles" size="1" value="{!SelectedProfileId}">
+                       <apex:actionSupport status="counterStatus" event="onchange" action="{!fetchProfilePermissions}" rerender="ObjectPermissions,FieldPermissions,ApexClassPermissions,ApexPagePermissions,AppPermissions,ExportProfileWorkbookForm" />
+                    <apex:selectOptions value="{!Profiles}"/>
+                </apex:selectList>
+                 </apex:outputPanel>
+                
+                 <apex:outputLabel value="Email Address" for="email"/> 
+                  <apex:outputPanel >
+                 <apex:input value="{!EnteredEmail}" styleClass="input-block-level" type="email" id="email"/>
+                
+                    </apex:outputPanel>
+                     <apex:outputLabel value="" for="exportAllbutton"/> 
+                    <apex:outputPanel >
+                    
+                     <apex:commandbutton id="exportAllbutton" styleClass=" btn btn-primary" status="counterStatus" value="Send Profile workbook"  rerender="ExportProfileWorkbookForm,allalertmsg" action="{!exportAll}" onclick="if(!confirm('Please confirm action?')){return false};"  />
+                    
+                   </apex:outputPanel>
+                    
+                </apex:panelGrid>         
+               
+            </apex:pageBlockSection>
+            <apex:pagemessage title="Alert" id="allalertmsg" severity="Info" rendered="{!If(SelectedProfileId =='All' ,true,false)}" summary="Please click send profile workbook, we will send profile workbook through mail" /> 
+           <!-- <apex:outputText value="Please click send profile workbook, we will send profile workbook through mail" rendered="{!If(SelectedProfileId =='All' ,true,false)}" />-->
+           
+              
+            <apex:pageBlockSection title="Object Permission" rendered="{!If(OR(SelectedProfileId =='All',SelectedProfileId =='None')   ,false,true)}">
+             
+           <apex:outputText value="There are no records to display" rendered="{!fetchObjectPermissions.size==0}" />
+            <apex:outputPanel id="ObjectPermissions" layout="block" style="overflow: auto; height: 150px;"> 
+               <apex:pageBlockTable value="{!fetchObjectPermissions}" id="ObjectPGTId" var="obj" rendered="{! If(OR(SelectedProfileId =='All',SelectedProfileId =='None',fetchObjectPermissions.size==0) ,false,true) }" >
+              
+                <apex:column headerValue="Object Name" value="{!obj.SObjectType}"/>
+                <apex:column headerValue="Create" value="{!obj.PermissionsCreate}"/>
+                <apex:column headerValue="Read" value="{!obj.PermissionsRead}"/>
+                <apex:column headerValue="Edit" value="{!obj.PermissionseDIT}"/>
+                <apex:column headerValue="Delete" value="{!obj.PermissionsDelete}"/>
+                <apex:column headerValue="ModifyAll" value="{!obj.PermissionsModifyAllRecords}"/>
+                <apex:column headerValue="ViewAll" value="{!obj.PermissionsViewAllRecords}"/>
+               </apex:pageBlockTable>
+            
+           </apex:outputPanel>
+           </apex:pageBlockSection>
+           
+     <!--  <apex:pageBlockSection title="Field Permission">
+           <apex:outputPanel id="FieldPermissions">
+              <apex:outputText value="There are no records to display" rendered="{!fetchFieldPermissions.size==0}" />
+                <apex:outputText value="Please click send profile workbook, we will send profile workbook through mail" rendered="{!If(SelectedProfileId =='All' ,true,false)}" />
+              
+               <apex:pageBlockTable value="{!fetchFieldPermissions}"  var="obj" rendered="{! If(OR(SelectedProfileId =='All',fetchFieldPermissions.size==0) ,false,true) }">
+                 <apex:column headerValue="Object Name" value="{!obj.SObjectType}"/>
+                <apex:column headerValue="Field" value="{!obj.Field}"/>
+                <apex:column headerValue="Read" value="{!obj.PermissionsRead}"/>
+                <apex:column headerValue="Edit" value="{!obj.PermissionsEdit}"/>
+               </apex:pageBlockTable>
+           </apex:outputPanel>
+           </apex:pageBlockSection>  -->
+           
+           <apex:pageBlockSection title="ApexClass Permission" rendered="{!If(OR(SelectedProfileId =='All',SelectedProfileId =='None')   ,false,true)}">
+                <apex:outputText value="There are no records to display" rendered="{!ApexclassList.size==0}" />
+              <apex:outputPanel id="ApexClassPermissions" layout="block" style="overflow: auto; height: 150px;" >
+              
+                 
+               <apex:pageBlockTable value="{!ApexclassList }" id="ApexClassPGTId" var="obj" rendered="{! If(OR(SelectedProfileId =='All',ApexclassList.size==0)  ,false,true) }">
+                 <apex:column headerValue="Class Name" value="{!obj.name}"/>
+               
+               </apex:pageBlockTable>
+           </apex:outputPanel>
+           </apex:pageBlockSection>
+           
+           <apex:pageBlockSection title="ApexPage Permission" rendered="{!If(OR(SelectedProfileId =='All',SelectedProfileId =='None')   ,false,true)}">
+          <apex:outputText value="There are no records to display" rendered="{!ApexPageList.size==0}" />
+          <apex:outputPanel id="ApexPagePermissions" layout="block" style="overflow: auto; height: 150px;">
+               
+              
+               <apex:pageBlockTable value="{!ApexPageList }"  id="ApexPagePGTId" var="obj" rendered="{! If(OR(SelectedProfileId =='All',ApexPageList.size==0)  ,false,true) }">
+                        <apex:column headerValue="PageName" value="{!obj.name}"/>
+               
+               </apex:pageBlockTable>
+           </apex:outputPanel>
+           </apex:pageBlockSection>
+           <apex:pageBlockSection title="Apps Permission" rendered="{!If(OR(SelectedProfileId =='All',SelectedProfileId =='None')   ,false,true)}">
+            <apex:outputText value="There are no records to display" rendered="{!AppsetList.size==0}" />
+           <apex:outputPanel id="AppPermissions" layout="block" style="overflow: auto; height: 150px;">
+            
+               
+               <apex:pageBlockTable value="{!AppsetList}" id="AppPGTId" var="obj" rendered="{!  If(OR(SelectedProfileId =='All',AppsetList.size==0)  ,false,true) }">
+                <apex:column headerValue="App Name" value="{!obj.name}"/>
+               
+               </apex:pageBlockTable>
+           </apex:outputPanel>
+           </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

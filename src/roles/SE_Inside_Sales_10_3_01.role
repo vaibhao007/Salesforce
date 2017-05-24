@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Inside Sales</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>01 SE Inside Sales 10.3</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>SE_Sales_10_01</parentRole>
+</Role>

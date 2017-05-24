@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Updates the standard parent account field with same account that is in OM_Billing_Account__c</description>
+    <interviewLabel>Parent Account Update on Facility {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Parent Account Update on Facility</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>OM_Parent_Account_Update_on_Facility</name>
+        <label>Parent Account Update on Facility</label>
+        <locationX>236</locationX>
+        <locationY>223</locationY>
+        <inputAssignments>
+            <field>ParentId</field>
+            <value>
+                <elementReference>BillingAccount</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <startElementReference>OM_Parent_Account_Update_on_Facility</startElementReference>
+    <variables>
+        <description>The Billing Account that is related to the Facility</description>
+        <name>BillingAccount</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

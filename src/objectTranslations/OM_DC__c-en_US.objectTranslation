@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DC</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DCs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>OM_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>OM_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- DC Number --></label>
+        <name>OM_DC_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- DC Power of One --></label>
+        <name>OM_DC_Power_of_One__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Manager --></label>
+        <name>OM_General_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>OM_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>OM_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>OM_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Address --></label>
+        <name>OM_Street_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>OM_Type__c</name>
+        <picklistValues>
+            <masterLabel>LDC</masterLabel>
+            <translation><!-- LDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MDC</masterLabel>
+            <translation><!-- MDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDC</masterLabel>
+            <translation><!-- RDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLC</masterLabel>
+            <translation><!-- SLC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Zip/Postal Code --></label>
+        <name>OM_Zip_Postal_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>DC Layout</layout>
+        <sections>
+            <label><!-- Address/Contact Info --></label>
+            <section>Address/Contact Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

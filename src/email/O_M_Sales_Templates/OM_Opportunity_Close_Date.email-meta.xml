@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>For use in delivering auto notifications about opportunities approaching close date</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>OM_Standard_Letterhead</letterhead>
+    <name>Opportunity Close Date</name>
+    <style>freeForm</style>
+    <subject>{!Opportunity.Name} is about to close!</subject>
+    <textOnly>Hi {!Opportunity.OwnerFullName},
+
+Your opportunity for {!Opportunity.Account} for a total amount of {!Opportunity.ExpectedRevenue} is set to close on {!Opportunity.CloseDate} and the stage is not yet closed.
+
+Please extend the close date or change the stage of the opportunity. 
+
+To get to your opportunity quickly, please use this link.
+{!Opportunity.Link}
+
+Thank you</textOnly>
+    <type>html</type>
+</EmailTemplate>

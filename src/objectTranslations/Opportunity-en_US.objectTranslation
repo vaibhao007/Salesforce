@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Annual Revenue</value>
+        </caseValues>
+        <name>amount_opportunity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Opportunity Close Date</value>
+        </caseValues>
+        <name>close_date_opportunity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Product/Service</value>
+        </caseValues>
+        <name>type_opportunity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Budget Confirmed --></label>
+        <name>Budget_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Year Margin $s --></label>
+        <name>Current_Year_Margin_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Competitor --></label>
+        <name>DB_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation><!-- Competitor A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation><!-- Competitor B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation><!-- Competitor C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Discovery Completed --></label>
+        <name>Discovery_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loss Reason --></label>
+        <name>Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation><!-- Lost to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Budget / Lost Funding</masterLabel>
+            <translation><!-- No Budget / Lost Funding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Decision / Non-Responsive</masterLabel>
+            <translation><!-- No Decision / Non-Responsive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>OM_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Forecast Margin --></label>
+        <name>OM_Annual_Forecast_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Forecast Revenue --></label>
+        <name>OM_Annual_Forecast_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Margin Revenue --></label>
+        <name>OM_Annual_Margin_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anticipated RFP Date --></label>
+        <name>OM_Anticipated_RFP_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contribution Margin --></label>
+        <name>OM_Contribution_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Contract Expiration --></label>
+        <name>OM_Current_Contract_Expiration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Distributor --></label>
+        <name>OM_Current_Distributor__c</name>
+    </fields>
+    <fields>
+        <help><!-- Autocalculated based on annual revenue and revenue start date --></help>
+        <label><!-- Current Year Revenue --></label>
+        <name>OM_Current_Year_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- DC --></label>
+        <name>OM_DC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Method --></label>
+        <name>OM_Delivery_Method__c</name>
+        <picklistValues>
+            <masterLabel>Bulk</masterLabel>
+            <translation><!-- Bulk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Unit</masterLabel>
+            <translation><!-- Low Unit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Formal Proposal Required --></label>
+        <name>OM_Formal_Proposal_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- GPO --></label>
+        <name>OM_GPO__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gross Margin --></label>
+        <name>OM_Gross_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hazardous Materials --></label>
+        <name>OM_Hazardous_Materials__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hold Reason --></label>
+        <name>OM_Hold_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Implementation Start Date --></label>
+        <name>OM_Implementation_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager&apos;s Email --></label>
+        <name>OM_Managers_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the margin percent for this opportunity it is not a Medichoice or CPS opportunity (it will calculate automatically for those based on product level margin %) --></help>
+        <label><!-- Margin Percentage --></label>
+        <name>OM_Margin_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onsite Assessment Required? --></label>
+        <name>OM_Onsite_Assessment_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Power of One --></label>
+        <name>OM_Opportunity_Power_of_One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Purchasing Affiliations --></label>
+        <name>OM_Other_Purchasing_Affiliations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent/IDN Account --></label>
+        <name>OM_Parent_IDN_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Margin Revenue --></label>
+        <name>OM_Product_Margin_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed Services --></label>
+        <name>OM_Proposed_Services__c</name>
+        <picklistValues>
+            <masterLabel>Expanded Access</masterLabel>
+            <translation><!-- Expanded Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPM</masterLabel>
+            <translation><!-- IPM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory Valuation</masterLabel>
+            <translation><!-- Inventory Valuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kanban</masterLabel>
+            <translation><!-- Kanban --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUM</masterLabel>
+            <translation><!-- LUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outsourcing</masterLabel>
+            <translation><!-- Outsourcing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PANDAC</masterLabel>
+            <translation><!-- PANDAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferred Access</masterLabel>
+            <translation><!-- Preferred Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qsight</masterLabel>
+            <translation><!-- Qsight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFID</masterLabel>
+            <translation><!-- RFID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SurgiTrack</masterLabel>
+            <translation><!-- SurgiTrack --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchase Levels --></label>
+        <name>OM_Purchase_Levels__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFP Due Date --></label>
+        <name>OM_RFP_Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the first invoice date for this opportunity. --></help>
+        <label><!-- Revenue Start Date --></label>
+        <name>OM_Revenue_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Type --></label>
+        <name>OM_Sales_Type__c</name>
+        <picklistValues>
+            <masterLabel>Expanded Access Sale</masterLabel>
+            <translation><!-- Expanded Access Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Sale</masterLabel>
+            <translation><!-- New Sale --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Count --></label>
+        <name>Product_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>MediChoice</masterLabel>
+            <translation><!-- MediChoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Action/AVID</masterLabel>
+            <translation><!-- Medical Action/AVID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Value Partnership</masterLabel>
+            <translation><!-- Strategic Value Partnership --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ROI Analysis Completed --></label>
+        <name>ROI_Analysis_Completed__c</name>
+    </fields>
+    <layouts>
+        <layout>MediChoice/House Brand</layout>
+        <sections>
+            <label><!-- Revenue Details --></label>
+            <section>Revenue Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Layout</layout>
+        <sections>
+            <label><!-- Other Details --></label>
+            <section>Other Details</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CPS --></label>
+        <name>OM_CPS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Core Distribution --></label>
+        <name>OM_Core_Distribution</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Manufacturer Services --></label>
+        <name>OM_Manufacturer_Services</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MediChoice/House Brand --></label>
+        <name>OM_Medichoice_Housebrand</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Strategic Logistics Center (SLC) --></label>
+        <name>OM_Strategic_Logistics_Center</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Supply Chain Services --></label>
+        <name>OM_Supply_Chain_Services</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot close Opportunities that have been awarded against Prospect Accounts. Please contact the CMF team to create an Account in MDM. --></errorMessage>
+        <name>Close_Oppty_for_Prospect</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Following Fields should have a value for Probability Greater than 30%-
+Delivery Method,
+Proposed Services,
+Product --></errorMessage>
+        <name>OpportunityReqFieldsforProbability</name>
+    </validationRules>
+</CustomObjectTranslation>

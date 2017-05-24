@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RFP</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RFPs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Current Distributor --></label>
+        <name>Current_Distributor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>OM_Account__c</name>
+        <relationshipLabel><!-- RFPs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Anticipated RFP Release Date --></label>
+        <name>OM_Anticipated_RFP_Release_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current contract Expiration Date --></label>
+        <name>OM_Current_contract_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Method --></label>
+        <name>OM_Delivery_Method__c</name>
+        <picklistValues>
+            <masterLabel>Bulk</masterLabel>
+            <translation><!-- Bulk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low Unit</masterLabel>
+            <translation><!-- Low Unit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Diversity --></label>
+        <name>OM_Diversity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Formal Proposal Required --></label>
+        <name>OM_Formal_Proposal_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- GM from Ops --></label>
+        <name>OM_GM_from_Ops__c</name>
+    </fields>
+    <fields>
+        <label><!-- GPO --></label>
+        <name>OM_GPO__c</name>
+        <relationshipLabel><!-- RFPs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Internal Due Date --></label>
+        <name>OM_Internal_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inventory Solutions --></label>
+        <name>OM_Inventory_Solutions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal --></label>
+        <name>OM_Legal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>OM_Opportunity__c</name>
+        <relationshipLabel><!-- RFPs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other Purchasing Affiliations --></label>
+        <name>OM_Other_Purchasing_Affiliations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing --></label>
+        <name>OM_Pricing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>OM_Product__c</name>
+        <picklistValues>
+            <masterLabel>MediChoice</masterLabel>
+            <translation><!-- MediChoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Action/AVID</masterLabel>
+            <translation><!-- Medical Action/AVID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strategic Value Partnership</masterLabel>
+            <translation><!-- Strategic Value Partnership --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Provider Services RVP --></label>
+        <name>OM_Provider_Services_RVP__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFP Due Date --></label>
+        <name>OM_RFP_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RFP Power of One --></label>
+        <name>OM_RFP_Power_of_One__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technology --></label>
+        <name>OM_Technology__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>OM_Type__c</name>
+        <picklistValues>
+            <masterLabel>Current Business</masterLabel>
+            <translation><!-- Current Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Business</masterLabel>
+            <translation><!-- New Business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proposed Services --></label>
+        <name>Proposed_Services__c</name>
+        <picklistValues>
+            <masterLabel>Expanded Access</masterLabel>
+            <translation><!-- Expanded Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IPM</masterLabel>
+            <translation><!-- IPM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inventory Valuation</masterLabel>
+            <translation><!-- Inventory Valuation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kanban</masterLabel>
+            <translation><!-- Kanban --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LUM</masterLabel>
+            <translation><!-- LUM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outsourcing</masterLabel>
+            <translation><!-- Outsourcing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PANDAC</masterLabel>
+            <translation><!-- PANDAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferred Access</masterLabel>
+            <translation><!-- Preferred Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qsight</masterLabel>
+            <translation><!-- Qsight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RFID</masterLabel>
+            <translation><!-- RFID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SurgiTrack</masterLabel>
+            <translation><!-- SurgiTrack --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>RFP Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Personnel Required for RFP --></label>
+            <section>Personnel Required for RFP</section>
+        </sections>
+        <sections>
+            <label><!-- RFP Specifics --></label>
+            <section>RFP Specifics</section>
+        </sections>
+        <sections>
+            <label><!-- Services --></label>
+            <section>Services</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Location</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Locations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Attention --></label>
+        <name>OM_Attention__c</name>
+    </fields>
+    <fields>
+        <label><!-- Carrier Type --></label>
+        <name>OM_Carrier_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Comment --></label>
+        <name>OM_Delivery_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Location Account Number --></label>
+        <name>OM_Delivery_Location_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Location Contact --></label>
+        <name>OM_Delivery_Location_Contact__c</name>
+        <relationshipLabel><!-- Delivery Locations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Department Name --></label>
+        <name>OM_Department_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Account Number --></label>
+        <name>OM_Facility_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Address --></label>
+        <name>OM_Facility_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility County --></label>
+        <name>OM_Facility_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Latitude --></label>
+        <name>OM_Facility_Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Longitude --></label>
+        <name>OM_Facility_Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Street Address - Search --></label>
+        <name>OM_Facility_Street_Address_Search__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility --></label>
+        <name>OM_Facility__c</name>
+        <relationshipLabel><!-- Delivery Locations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Freight Billing --></label>
+        <name>OM_Freight_Billing__c</name>
+        <picklistValues>
+            <masterLabel>Billable</masterLabel>
+            <translation><!-- Billable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collect</masterLabel>
+            <translation><!-- Collect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prepaid</masterLabel>
+            <translation><!-- Prepaid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location ID --></label>
+        <name>OM_Location_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Facility ID --></label>
+        <name>OM_MDM_Facility_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM ID --></label>
+        <name>OM_MDM_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- OMAR ID --></label>
+        <name>OM_OMAR_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- OMNI ID --></label>
+        <name>OM_Omni_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- P.O. Box --></label>
+        <name>OM_P_O_Box__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picking Label --></label>
+        <name>OM_Picking_Label__c</name>
+        <picklistValues>
+            <masterLabel>Code B</masterLabel>
+            <translation><!-- Code B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Code Y</masterLabel>
+            <translation><!-- Code Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>OM_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Location Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- OM System Information --></label>
+            <section>OM System Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rapport</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rapports</value>
+    </caseValues>
+    <fields>
+        <label><!-- Affects Support --></label>
+        <name>OM_Affects_Support__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>OM_Contact__c</name>
+        <relationshipLabel><!-- Rapports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Details --></label>
+        <name>OM_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>OM_Type__c</name>
+        <picklistValues>
+            <masterLabel>Communication Preferences</masterLabel>
+            <translation><!-- Communication Preferences --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dislikes</masterLabel>
+            <translation><!-- Dislikes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family</masterLabel>
+            <translation><!-- Family --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Likes</masterLabel>
+            <translation><!-- Likes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferences</masterLabel>
+            <translation><!-- Preferences --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>OM_Rapport Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- update rapport --></label>
+        <name>update_rapport</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Rapport Standard --></label>
+        <name>Rapport_Standard</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

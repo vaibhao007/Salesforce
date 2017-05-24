@@ -1,0 +1,10 @@
+I've just entered an opportunity that exceeds the threshold you set for notification!
+
+Opportunity Name :- {!Opportunity.Name}
+Amount:- {!Opportunity.Amount}
+Expected Close Date:- {!Opportunity.CloseDate}
+
+{!Opportunity.Link}
+
+Thanks,
+{!Opportunity.OwnerFullName}

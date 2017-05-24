@@ -1,0 +1,11 @@
+I've just entered an opportunity that below the threshold you set for notification! 
+
+Opportunity Name :- {!Opportunity.Name} 
+Amount:- {!Opportunity.Amount} 
+Margin Percentage :-{!Opportunity.OM_Margin_Percentage__c}
+Expected Close Date:- {!Opportunity.CloseDate} 
+
+{!Opportunity.Link} 
+
+Thanks, 
+{!Opportunity.OwnerFullName}

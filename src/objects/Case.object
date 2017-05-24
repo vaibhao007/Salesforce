@@ -1,0 +1,3035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Case_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Case</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Compact_Lt</fullName>
+        <fields>Subject</fields>
+        <fields>Priority</fields>
+        <fields>Status</fields>
+        <fields>OwnerId</fields>
+        <fields>AccountId</fields>
+        <fields>ContactId</fields>
+        <fields>Contact_Rapport__c</fields>
+        <label>Compact Lt</label>
+    </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AccountId</fullName>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>notEqual</operation>
+                <value>Manufacturer Account</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Contact_Rapport__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.OM_Rapport_Flag__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Rapport</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>OM_Account_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.AccountNumber</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OM_Carrier__c</fullName>
+        <externalId>false</externalId>
+        <label>Carrier</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OM_Case_Power_of_One__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Case Power of One</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OM_Customer_PO_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer PO Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OM_Delivery_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dropship</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Will-Call</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Same Day</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Off Day Order</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Regular Delivery</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Late Delivery</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OM_Invoice_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OM_Is_Aging__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Aging</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OM_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>OM_Product_number__c</fullName>
+        <externalId>false</externalId>
+        <label>Product number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OM_Quantity_Ordered__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity Ordered</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OM_Quantity_Received__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity Received</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OM_RGA_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>RGA Number</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OM_Resolution__c</fullName>
+        <externalId>false</externalId>
+        <label>Resolution</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Status</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Product Returned</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New Order Placed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Order Updated</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Acceptable ETA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Substitute of Original Product</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cancelled Product from Order</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cancelled Order</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Credit Issued</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rebill Issued</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Closed - Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contract Updated</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Price Updated</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Review Credit Limit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Release Credit Hold</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Overage Returned</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Shortage Reshipped</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sent Missing Paperwork</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sent POD</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Credit Issued - No reship</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Instructions not clear</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Product Returned</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>New Order Placed</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Order Updated</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Acceptable ETA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Substitute of Original Product</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Cancelled Product from Order</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Closed</controllingFieldValue>
+                <valueName>Cancelled Order</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OM_Return_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Return Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>UNSALEABLE/DAMAGED</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MERCH RETURNED - SALEABLE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>OUTDATED/EXPIRE SHELF LIFE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DUPLICATE SHIPMENT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>MANUFACTURER RECALL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>RESTOCKING FEE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DISASTER RELIEF</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SURGTRK COMPONENT</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>OM_Sales_Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Order Number</label>
+        <length>22</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OM_Shipping_address__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipping address</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OM_UOM_Unit_of_Measure__c</fullName>
+        <externalId>false</externalId>
+        <label>UOM (Unit of Measure)</label>
+        <length>25</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SourceId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>agf__ADM_Work__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>A connection to the Agile Accelerator Work object used to track Bugs, Investigations and User Stories</description>
+        <externalId>false</externalId>
+        <label>Work</label>
+        <referenceTo>agf__ADM_Work__c</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>AgileAcceleratorCases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <listViews>
+        <fullName>AllOpenCases</fullName>
+        <columns>CASES.CASE_NUMBER</columns>
+        <columns>CASES.RECORDTYPE</columns>
+        <columns>CASES.SUBJECT</columns>
+        <columns>CASES.STATUS</columns>
+        <columns>CASES.PRIORITY</columns>
+        <columns>CASES.TYPE</columns>
+        <columns>CASES.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Open Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyCases</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenCases</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Open Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>OM_Customer_Service_Cases_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Customer Service Cases</label>
+        <queue>OM_Customer_Service_Cases</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>OM_Email_to_Case_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Email to Case</label>
+        <queue>OM_Email_to_Case</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>OM_Financial_Ops_Cases_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Financial Ops Cases</label>
+        <queue>OM_Financial_Ops_Cases</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>OM_Purchasing_Cases_Case</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Purchasing Cases</label>
+        <queue>OM_Purchasing_Cases</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>OM_Backorder</fullName>
+        <active>true</active>
+        <businessProcess>Case</businessProcess>
+        <compactLayoutAssignment>Compact_Lt</compactLayoutAssignment>
+        <label>Backorder</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>Acceptable ETA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Product from Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Substitute of Original Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Acceptable ETA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Product from Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Substitute of Original Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ETA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expedite</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Substitution</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OM_Cash_Application</fullName>
+        <active>true</active>
+        <businessProcess>Case</businessProcess>
+        <label>Cash Application</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>Closed - Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OM_Collections</fullName>
+        <active>true</active>
+        <businessProcess>Case</businessProcess>
+        <label>Collections</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>Release Credit Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Credit Limit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Cash In Advance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Card Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Limit Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Processing Delays</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EDI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IReceivables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invalid PO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoice Missing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Past Due%2FSlow Pay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Missing%2FDuplicate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-pay</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipping Issues</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OM_Credit_Assessment</fullName>
+        <active>true</active>
+        <businessProcess>Case</businessProcess>
+        <label>Credit Assessment</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>Release Credit Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Review Credit Limit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Bankruptcy %2F Collection Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cash In Advance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Limit Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>D Rated %2F High Risk Accounts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deposit Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired Credit Limit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Credit Limit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pre-pay</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OM_Customer_Setup</fullName>
+        <active>false</active>
+        <businessProcess>Case</businessProcess>
+        <label>Customer Setup</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>Acceptable ETA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Product from Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Returned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Substitute of Original Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OM_Discrepancy_Case</fullName>
+        <active>false</active>
+        <businessProcess>Case</businessProcess>
+        <label>Discrepancy Case</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>Acceptable ETA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Product from Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Returned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Substitute of Original Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OM_Dispute_Resolution</fullName>
+        <active>false</active>
+        <businessProcess>Case</businessProcess>
+        <label>Dispute Resolution</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>Acceptable ETA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled Product from Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Returned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Substitute of Original Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OM_Order_Management</fullName>
+        <active>true</active>
+        <businessProcess>Case</businessProcess>
+        <label>Order Management</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>New Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Updated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Order Placed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Order Updated</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Change an Existing Order%2FCorrect Pendings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Order</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OM_Other</fullName>
+        <active>true</active>
+        <businessProcess>Case</businessProcess>
+        <label>Other</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>Closed - Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OM_Pricing</fullName>
+        <active>true</active>
+        <businessProcess>Case</businessProcess>
+        <label>Pricing</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>Contract Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Issued</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price Updated</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rebill Issued</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Credit and Rebill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contract</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Price</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OM_Product_Returns</fullName>
+        <active>true</active>
+        <businessProcess>Case</businessProcess>
+        <label>Product Returns</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>Product Returned</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Returned</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Buyback - Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Buyback - Pandac</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Buyback - SurgiTrack</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Recall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OM_Purchasing</fullName>
+        <active>true</active>
+        <businessProcess>Case</businessProcess>
+        <label>Purchasing</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>Closed - Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>ATS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer At Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer level forecasts and usage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expedite Requests</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inter Branch Transfer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Vendor Open Orders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Allocations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recall notification</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>OM_Shipping_Issues</fullName>
+        <active>true</active>
+        <businessProcess>Case</businessProcess>
+        <label>Shipping Issues</label>
+        <picklistValues>
+            <picklist>OM_Delivery_Type__c</picklist>
+            <values>
+                <fullName>Dropship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Late Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Off Day Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regular Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Will-Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Resolution__c</picklist>
+            <values>
+                <fullName>Credit Issued - No reship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overage Returned</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent Missing Paperwork</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent POD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shortage Reshipped</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>OM_Return_Reason__c</picklist>
+            <values>
+                <fullName>DISASTER RELIEF</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DUPLICATE SHIPMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY RELIEF ORDER RETURN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANUFACTURER RECALL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MERCH RETURNED - SALEABLE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERR- CUST SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-CUSTOMER</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORDER ENTRY ERROR-SALES REP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTDATED%2FEXPIRE SHELF LIFE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QUARTERLY PANDAC RETURNS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RESTOCKING FEE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SURGTRK COMPONENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNACCEPTABLE SUBSTITUTE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>UNSALEABLE%2FDAMAGED</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fax</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day%2FTime of Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mispick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missing Paperwork</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>POD - Proof of Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shortage</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.CASE_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>OM_Account_Number__c</searchFilterFields>
+        <searchFilterFields>OM_Sales_Order_Number__c</searchFilterFields>
+        <searchFilterFields>OM_Customer_PO_Number__c</searchFilterFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.TYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>
