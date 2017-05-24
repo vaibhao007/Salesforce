@@ -26,7 +26,7 @@ if(accountIdSet.size() > 0)
              
              
           }
-          update lstAccount;//update account
+          update lstAccount;//update account..
        }}
 }
 }
