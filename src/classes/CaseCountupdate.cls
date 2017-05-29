@@ -26,7 +26,11 @@ if(accountIdSet.size() > 0)
              
              
           }
+<<<<<<< HEAD
           update lstAccount;//update the account..
+=======
+          update lstAccount;//update account..
+>>>>>>> branch 'develop' of https://github.com/vaibhao007/Salesforce
        }}
 }
 }
